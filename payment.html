@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200" />
+    <title>Payment | RINELLA LUXE</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section payment-section">
+      <h1>Payment Method ✦</h1>
+
+      <div class="payment-card">
+        <p class="pill">RINELLA LUXE CHECKOUT</p>
+
+        <h2>Choose Your Payment</h2>
+        <p class="payment-note">
+          Select your preferred payment gateway to continue.
+        </p>
+
+        <select id="paymentMethod">
+          <option value="">Select Payment Method</option>
+          <option value="bankislam">Bank Islam</option>
+          <option value="maybank">Maybank2u</option>
+          <option value="cimb">CIMB Clicks</option>
+          <option value="publicbank">Public Bank</option>
+          <option value="tng">Touch 'n Go eWallet</option>
+        </select>
+
+        <button class="btn payment-btn" onclick="goPayment()">
+          Proceed To Payment
+        </button>
+
+        <a class="completed-link" href="orderSuccess.html">
+          I Have Completed Payment
+        </a>
+      </div>
+    </section>
+
+    <script>
+      function goPayment() {
+        const method = document.getElementById("paymentMethod").value;
+
+        const links = {
+          bankislam: "https://www.bankislam.com",
+          maybank: "https://www.maybank2u.com.my",
+          cimb: "https://www.cimbclicks.com.my",
+          publicbank: "https://www.pbebank.com",
+          tng: "https://www.touchngo.com.my",
+        };
+
+        if (!method) {
+          alert("Please select a payment method.");
+          return;
+        }
+
+        window.open(links[method], "_blank");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200" />
+    <title>Lookbook | RINELLA LUXE</title>
+
+    <meta name="description" content="Explore styling inspiration and outfit ideas from the RINELLA LUXE lookbook collection.">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  </head>
+
+  <body>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightboxImg" />
+    </div>
+
+    <div class="top-bar">
+      FREE SHIPPING MALAYSIA-WIDE (INCLUDING SABAH & SARAWAK) ON ORDERS OVER
+      RM150 ✨
+    </div>
+
+    <header class="header">
+      <a class="logo" href="index.html">Rinella<span>Luxe</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="lookbook.html">Lookbook</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="header-icons">
+        <a href="cart.html" class="cart-link">
+	<i class="fa-solid fa-bag-shopping"></i>
+          <span id="cartCount">0</span></a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h1>Lookbook ✦</h1>
+      <p>
+        Real style, real you. Get inspired by our community and see how they
+        style Rinella Luxe.
+      </p>
+      <div class="lookbook-grid">
+        <div class="look tall">
+          <img
+            src="images/lookbook_softlilac.png"
+            alt="Soft Lilac Set"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Printed Square Modern Blossom</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_cute.png"
+            alt="Pink Café Look"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Satin Shawl Soft Pink</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_garden.png"
+            alt="Green Garden Fit"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Printed Shawl Garden Dreams</div>
+        </div>
+
+        <div class="look tall">
+          <img
+            src="images/lookbook_workplace.png"
+            alt="Neutral Workwear"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Plain Square Soft Purple</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_weekend.png"
+            alt="Pastel Weekend"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Chiffon Shawl Soft Yellow</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_luxuryBeads.png"
+            alt="Luxury Beads"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Luxury Sparkle Beads</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_polkadot.png"
+            alt="Polka Dot Mood"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Pink Polka Dots</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_y2k.png"
+            alt="Y2K Babe"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Floral Beading</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_travel.png"
+            alt="Travelling"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Printed Square Floral Mosaic</div>
+        </div>
+
+        <div class="look">
+          <img
+            src="images/lookbook_elegant.png"
+            alt="Elegant Everyday"
+            onclick="openLightbox(this.src)"/>
+          <div class="look-overlay">Printed Square Elegant Petals</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <a class="logo" href="index.html">Rinella<span>Luxe</span></a>
+        <p>Affordable luxury hijabs for every mood, every moment.</p>
+        <p>© 2026 Rinella Luxe.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="collections.html">All Products</a>
+        <a href="cart.html">Shopping Cart</a>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html#faq">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html#policies">Policies</a>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+
+	<div class="social-icons">
+          <a href="https://www.instagram.com/rinellaluxe">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@rinellaluxe">
+            <i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/rinellaluxe">
+            <i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
